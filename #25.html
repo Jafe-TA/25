@@ -1,0 +1,1525 @@
+<!-- #2
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  document.write('Nombre: Jafet T.');
+  document.write('<br>');
+  document.write('Edad: 17');
+</script>
+
+</body>
+</html>
+-->
+
+<!-- #3
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  var nombre, sueldo;
+  nombre='Angel N.'
+  sueldo=25000;
+  document.write(nombre);
+  document.write('<br>');
+  document.write(sueldo); 
+</script>
+
+</body>
+</html> -->
+
+<!-- #4
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  var nombre;
+  var mail;
+  nombre=prompt('Ingrese su nombre:','');
+  edad=prompt('Ingrese su mail:','');
+  document.write(nombre);
+  document.write('<br>');
+  document.write(edad);
+
+</script>
+
+</body>
+</html>-->
+
+<!-- #5
+  PROBLEMAS
+1)Realizar la carga del lado de un cuadrado, mostrar por pantalla el perímetro del mismo (El perímetro de un cuadrado se calcula multiplicando 
+  el valor del lado por cuatro)
+2)Escribir un programa en el cual se ingresen cuatro números, calcular e informar la suma de los dos primeros y el producto del tercero y el
+  cuarto.
+3)Realizar un programa que lea cuatro valores numéricos e informar su suma y producto.
+4)Se debe desarrollar un programa que pida el ingreso del precio de un artículo y la cantidad que lleva el cliente. 
+  Mostrar lo que debe abonar el comprador (Ingresar por teclado un precio sin decimales, es decir un entero: 2, 7, 90 etc.)
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+PROBLEMAS #1     
+    <script>
+        var  lado1;
+        lado1 = prompt('Ingrese la medida de 1 lado:', '');
+        var mult = parseInt(lado1) * 4;
+        document.write('El area del cuadrado es: ');
+        document.write(mult);
+    </script>
+
+PROBLEMAS #2     
+<script>
+    var  num1;
+    var  num2;
+    var  num3;
+    var  num4;
+    num1 = prompt('Ingrese su primer valor:', '');
+    num2 = prompt('Ingrese su segundo valor:', '');
+    num3 = prompt('Ingrese su tercer valor:', '');
+    num4 = prompt('Ingrese su cuarto valor:', '');
+    var suma = parseInt(num1) + parseInt(num2);
+    document.write('La suma de sus 2 primeros digitos es: ');
+    document.write(suma);
+    document.write("<br>");
+    var mult = parseInt(num3) * parseInt(num4);
+    document.write('El producto de su 2 ultimos digitos es: ');
+    document.write(mult);
+</script>
+
+PROBLEMAS #3 
+<script>
+    var  num1;
+    var  num2;
+    var  num3;
+    var  num4;
+    num1 = prompt('Ingrese su primer valor:', '');
+    num2 = prompt('Ingrese su segundo valor:', '');
+    num3 = prompt('Ingrese su tercer valor:', '');
+    num4 = prompt('Ingrese su cuarto valor:', '');
+    var suma = parseInt(num1) + parseInt(num2) + parseInt(num3) + parseInt(num4);
+    document.write('La suma de sus sus valores es: ');
+    document.write(suma);
+    document.write("<br>");
+    var mult = parseInt(num1) * parseInt(num2) * parseInt(num3) * parseInt(num4);
+    document.write('El producto de sus valores es: ');
+    document.write(mult);
+</script>
+
+PROBLEMAS #4  
+<script>
+    var  precio;
+    var  cantidad;
+    precio = prompt('Ingrese el precio del producto:', '');
+    cantidad = prompt('Ingrese la cantidad de producto que lleva:', '');
+    var pago = parseInt(precio) * parseInt(cantidad);
+    document.write('Por favor pagar: ');
+    document.write(pago);
+</script>
+
+
+
+</body>
+
+</html> -->
+
+<!-- #6 
+PROBLEMAS
+1) Se ingresan tres notas de un alumno, si el promedio es mayor o igual a siete mostrar el mensaje 
+'Promocionado'. Tener en cuenta que para obtener el promedio debemos operar suma=nota1+nota2+nota3; 
+y luego hacer promedio=suma/3; Cuando cargamos una nota y queremos convertir inmediatamente el valor 
+ingresado a entero podemos hacer: nota1=prompt('Ingrese primer nota:','');
+nota1=parseInt(nota1);
+
+2) Solicitar que se ingrese dos veces una clave. Mostrar un mensaje si son iguales (tener en cuenta 
+que para ver si dos variables tienen el mismo valor almacenado debemos utilizar el operador ==)
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+Problema #1
+<script>
+  var nota1;
+  var nota2;
+  var nota3;
+  nota1=prompt('Ingrese su primera nota:','');
+  nota1=parseInt(nota1)
+  nota2=prompt('Ingrese su segunda nota:','');
+  nota1=parseInt(nota2)
+  nota3=prompt('Ingrese su tercera nota:','');
+  nota1=parseInt(nota3)
+  suma= parseInt(nota1) + parseInt(nota2) + parseInt(nota3);
+  promedio= suma / 3;
+  if (promedio >= 7)
+  {
+    document.write(' Promocionado')
+  }
+  
+</script> 
+
+Problema #2
+<script>
+  var clave1;
+  var clave2;
+  clave1= prompt('Ingrese una clave:','');
+  clave2= prompt('Confirme su clave:','');
+  if (clave2 == clave1 )
+  {
+    document.write(' Clave correcta')
+  }
+  
+</script>
+
+</body>
+</html> -->
+
+<!-- #7 
+    1- Realizar un programa que lea por teclado dos números, si el primero es mayor al segundo informar 
+    su suma y diferencia, en caso contrario informar el producto y la división del primero respecto al segundo.
+2- Se ingresan tres notas de un alumno, si el promedio es mayor o igual a 4 mostrar un mensaje 'regular', 
+   sino 'reprobado'.
+3- Se ingresa por teclado un número positivo de uno o dos dígitos (1..99) mostrar un mensaje indicando si 
+   el número tiene uno o dos dígitos (recordar de convertir a entero con parseInt para preguntar posteriormente 
+   por una variable entera). Tener en cuenta qué condición debe cumplirse para tener dos dígitos un número entero.
+   <html>
+   <head>
+     <title>Ejemplo de JavaScript</title>
+     <meta charset="UTF-8">
+   </head>
+   <body>
+   
+Problema #1
+    <script>
+     var num1,num2;
+     num1=prompt('Ingrese el primer número:','');
+     num2=prompt('Ingrese el segundo número:','');
+     num1=parseInt(num1);
+     num2=parseInt(num2);
+     if (num1>num2)
+     {
+        var suma = parseInt(num1) + parseInt(num2);
+        var resta = parseInt(num1) - parseInt(num2);
+       document.write('Su suma es '+ suma);
+       document.write('<br>');
+       document.write('Su resta es '+ resta);
+     }
+     else
+     {
+        var mult = parseInt(num1) * parseInt(num2);
+        var div = parseInt(num1) / parseInt(num2);
+       document.write('Su producto es '+ mult);
+       document.write('<br>');
+       document.write('Su division es '+ div);
+     }
+   </script> 
+
+Problema #2
+<script>
+    var nota1,nota2,nota3;
+    nota1=prompt('Ingrese su primera nota:','');
+    nota2=prompt('Ingrese su segunda nota:','');
+    nota3=prompt('Ingrese su tercera nota:','');
+    suma= parseInt(nota1) + parseInt(nota2) + parseInt(nota3);
+    promedio= suma / 3;
+    if (promedio >= 4)
+    {
+      document.write('regular');
+    }
+    else
+    {
+      document.write('reprobado');
+    }
+  </script> 
+
+Problema #3
+<script>
+    var num;
+    num=parseInt(prompt('Ingrese un numero:',''));
+    if (num >= 9)
+    {
+      document.write('numero de 2 digitos');
+    }
+    else
+    {
+        document.write('numero de 1 digitos');
+    }
+  </script>
+   
+   </body>
+   </html> -->
+
+<!-- #8
+1)- Se cargan por teclado tres números distintos. Mostrar por pantalla el mayor de ellos.\
+2)- Se ingresa por teclado un valor entero, mostrar una leyenda que indique si el número es positivo, cero o negativo.
+3)- Confeccionar un programa que permita cargar un número entero positivo de hasta tres cifras y muestre un mensaje 
+indicando si tiene 1, 2, o 3 cifras.
+4)- De un postulante a un empleo, que realizó un test de capacitación, se obtuvo la siguiente información: nombre del 
+postulante, cantidad total de preguntas que se le realizaron y cantidad de preguntas que contestó correctamente. Se 
+pide confeccionar un programa que lea los datos del postulante e informe el nivel del mismo según el porcentaje de 
+respuestas correctas que ha obtenido, y sabiendo que:
+
+Nivel superior: Porcentaje>=90%.
+Nivel medio: Porcentaje>=75% y <90%.
+Nivel regular: Porcentaje>=50% y <75%.
+Fuera de nivel: Porcentaje<50%.
+  <html>
+    <head>
+      <title>Ejemplo de JavaScript</title>
+      <meta charset="UTF-8">
+    </head>
+    <body>
+    
+Problema #1
+    <script>
+      var num1,num2,num3;
+      num1=prompt('Ingrese 1er. numero:','');
+      num2=prompt('Ingrese 2do. numero:','');
+      num3=prompt('Ingrese 3ro. numero:','');
+      //Convertimos los 3 string en enteros
+      num1=parseInt(num1);
+      num2=parseInt(num2);
+      num3=parseInt(num3);
+      if (num1>num2 && num1>num3)
+      {
+        document.write(num1);
+      }
+      else
+      {
+        if (num2>num1 && num2>num3)
+        {
+          document.write(num2);
+        }
+        else
+        {
+          document.write(num3);
+        }
+      }
+    </script>
+    
+Problema #2
+    <script>
+        var num1,num2,num3;
+        num1=prompt('Ingrese un numero:','');
+        num1=parseInt(num1);
+        if (num1>0)
+        {
+          document.write("positivo");
+        }
+        else
+        {
+            if (num1==0)
+          {
+            document.write("es cero");
+          }
+          else
+          {
+            document.write("es negativo");
+          }
+        }
+      </script> 
+
+Problama #3
+<script>
+    var num1;
+    num1=prompt('Ingrese un numero:','');
+    num1=parseInt(num1);
+    if (num1<10)
+    {
+      document.write("tiene 1 cifra");
+    }
+    else
+    {
+        if (num1<99)
+      {
+        document.write("tiene 2 cifras");
+      }
+      else
+      {
+        document.write("tiene 3 cifras");
+      }
+    }
+  </script>
+
+    </body>
+    </html> 
+ 
+ Problema #4
+<script>
+var nom;
+var Porcentaje;
+nom=prompt('Ingrese su nombre:','');
+document.write(nom);
+document.write('<br>');
+Porcentaje=prompt('Cuantas preguntas de las 10 realizada, contesto bien:','');
+Porcentaje=parseInt(Porcentaje);
+    if (Porcentaje>=9)
+    {
+        document.write("Nivel superior");
+    }
+    else
+    {
+        if (Porcentaje<9 && Porcentaje>=7)
+        {
+        document.write("Nivel medio");
+        }
+        else
+        {
+            if (Porcentaje>=5 && Porcentaje<=7)
+            {
+            document.write("Nivel regular");
+            }
+            else{
+                document.write("Fuera de nivel");
+            }
+        }
+    }
+
+</script>-->
+
+<!-- #9 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+PROBLEMAS
+
+1- Realizar un programa que pida cargar una fecha cualquiera, luego verificar si dicha fecha corresponde a Navidad 
+    (se debe cargar por separado el dia, el mes y el año)
+2- Se ingresan tres valores por teclado, si todos son iguales se imprime la suma del primero con el segundo y a este 
+    resultado se lo multiplica por el tercero (tener en cuenta que puede haber tres condiciones simples)
+3- Se ingresan por teclado tres números, si todos los valores ingresados son menores a 10, imprimir en la página la 
+    leyenda ' Todos los números son menores a diez'.
+4- Escribir un programa que pida ingresar la coordenada de un punto en el plano, es decir dos valores enteros x e y.
+    Posteriormente imprimir en pantalla en qué cuadrante se ubica dicho punto. (1º Cuadrante si x > 0 Y y > 0 , 2º 
+    Cuadrante: x < 0 Y y > 0, etc.)
+5- De un operario se conoce su sueldo y los años de antigüedad. Se pide confeccionar un programa que lea los datos de 
+entrada e informe
+a) Si el sueldo es inferior a 500 y su antigüedad es igual o superior a 10 años, otorgarle un aumento del 20 %, mostrar 
+el sueldo a pagar.
+b) Si el sueldo es inferior a 500 pero su antigüedad es menor a 10 años, otorgarle un aumento de 5 %.
+c) Si el sueldo es mayor o igual a 500 mostrar el sueldo en la página sin cambios.
+
+Problema 1
+var dia;
+var mes;
+dia=prompt('Ingrese un dia:','');
+mes=prompt('Ingrese un mes:','');
+dia=parseInt(dia);
+mes=parseInt(mes);
+  if (dia==25 & mes==12)
+  {
+    document.write('es navidad');
+  }
+  else
+  {
+      document.write('No es navidad'); 
+  }
+</script>
+
+ Problema #2
+<script>
+var val1;
+var val2;
+var val3;
+val1=prompt('Ingrese un valor:','');
+val2=prompt('Ingrese el mismo valor:','');
+val3=prompt('Ingrese el mismo valor:','');
+val1=parseInt(val1);
+val2=parseInt(val2);
+val3=parseInt(val3);
+if (val1==val2 & val1==val3)
+  {
+    operacion= parseInt(val1) + parseInt(val2); 
+    mult = operacion * parseInt(val3);
+    document.write(mult); 
+  }
+  else
+  {
+      document.write('los valores no son los mismos'); 
+  }
+</script> 
+ 
+Problema #3
+<script>
+  var val1;
+  var val2;
+  var val3;
+  val1=prompt('Ingrese un valor menor a 10:','');
+  val2=prompt('Ingrese un valor menor a 10:','');
+  val3=prompt('Ingrese un valor menor a 10:','');
+  val1=parseInt(val1);
+  val2=parseInt(val2);
+  val3=parseInt(val3);
+  if (val1<10 && val2<10 && val3<10)
+    {
+      document.write('Todos los números son menores a diez'); 
+    }
+    else
+    {
+        document.write('un valor es mayor a 10'); 
+    }
+</script>
+
+</body>
+</html> 
+
+ Problema #4
+<script>
+  var val1;
+  var val2;
+  var val3;
+  val1=prompt('Ingrese X:','');
+  val2=prompt('Ingrese Y:','');
+  val1=parseInt(val1);
+  val2=parseInt(val2);
+  if (val1>0 && val2>0)
+    {
+      document.write('Primer cuadrante'); 
+    }
+    else
+    {
+      if (val1<0 && val2>0)
+      {
+        document.write('segundo cuadrante'); 
+      }
+      else{
+        if (val1<0 && val2<0){
+          document.write('tercer cuadrante'); 
+        }
+        else{
+          if (val1>0 && val2<0)
+          {
+            document.write('cuarto cuadrante'); 
+          }
+        }
+      }
+    }
+</script> 
+
+<script>
+var sueldo;
+var años;
+  sueldo=prompt('Sueldo:','');
+  años=prompt('Años laburando:','');
+  sueldo=parseInt(sueldo);
+  años=parseInt(años);
+  if (sueldo<500 && años>=10 )
+    {
+      operacion= parseInt(sueldo) * 20;
+      porciento= operacion / 100;
+      result= porciento + parseInt(sueldo);
+      document.write('Tiene mucho trabajando, se le hizo un aumento de 20%: '+result); 
+    }
+    else
+    {
+      if (sueldo<500 && años<10 ){
+      operacion2= parseInt(sueldo) * 5;
+      porciento2= operacion2 / 100;
+      result2= porciento2 + parseInt(sueldo);
+      document.write('Tiene mucho trabajando, se le hizo un aumento de 5%: '+result2); 
+      }
+      else{
+        if (sueldo>=500){
+          document.write
+        }
+      }
+    }
+</script>
+</body>
+</html>-->
+
+<!-- #10
+    Se ingresan por teclado tres números, si al menos uno de los valores ingresados es menores a 10, 
+    imprimir en la página la leyenda 'Alguno de los números es menor a diez'.
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  var val1,val2,val3;
+  val1=prompt('Ingrese un valor:','');
+  val2=prompt('Ingrese otro valor:','');
+  val3=prompt('Ingrese un ultimo valor:','');
+  val1=parseInt(val1);
+  val2=parseInt(val2);
+  val3=parseInt(val3);
+  if (val1<=10 || val2<=10 || val3<=10 )
+  {
+    document.write('Alguno de los números es menor a diez');
+  }
+</script>
+
+</body>
+</html>-->
+
+<!-- #11
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  var val1,val2,val3;
+  val1=prompt('Ingrese un valor:','');
+  val2=prompt('Ingrese otro valor:','');
+  val3=prompt('Ingrese un ultimo valor:','');
+  val1=parseInt(val1);
+  val2=parseInt(val2);
+  val3=parseInt(val3);
+  if (val1<=10 || val2<=10 || val3<=10 )
+  {
+    document.write('Alguno de los números es menor a diez');
+  }
+</script>
+
+</body>
+</html>-->
+
+<!-- #12
+    PROBLEMA
+
+1- Realizar un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44, etc. (No se ingresan valores por teclado).
+
+2- Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en pantalla 8 -16 -24, etc.
+
+<h4>Problema 1</h4><br>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  var x;
+  x=11;
+  while (x<=280)
+  {
+    document.write(x);
+    document.write('<br>');
+    x=x+11;
+  }
+</script>
+
+</body>
+</html>
+
+<h4>Problema 2</h4><br>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  var x;
+  x=8;
+  while (x<=500)
+  {
+    document.write(x);
+    document.write('<br>');
+    x=x+8;
+  }
+</script>
+
+</body>
+</html>-->
+
+<!-- #13 
+PROBLEMAS
+
+Ha llegado la parte fundamental, que es el momento donde uno desarrolla individualmente un algoritmo para la resolución de problemas.
+El tiempo a dedicar a esta sección EJERCICIOS PROPUESTOS debe ser mucho mayor que el empleado al ver EJERCICIOS RESUELTOS.
+La experiencia dice que debemos dedicar el 80 % del tiempo a la resolución individual de problemas y el otro 20 % al análisis y codificación 
+de problemas ya resueltos por otras personas.
+Es de vital importancia para llegar a ser un buen PROGRAMADOR poder resolver problemas en forma individual.
+
+1) Escribir un programa que lea 10 notas de alumnos y nos informe cuántos tienen notas mayores o iguales a 7 y cuántos menores.
+
+2) Se ingresan un conjunto de 5 alturas de personas por teclado. Mostrar la altura promedio de las personas.
+
+3) En una empresa trabajan 5 empleados cuyos sueldos oscilan entre $100 y $500, realizar un programa que lea los sueldos que cobra cada 
+empleado e informe cuántos empleados cobran entre $100 y $300 y cuántos cobran más de $300. Además el programa deberá informar el importe 
+que gasta la empresa en sueldos al personal.
+
+4) Realizar un programa que imprima 20 términos de la serie 5 - 10 - 15 - 20, etc. (No se ingresan valores por teclado)
+
+5) Mostrar los múltiplos de 10 hasta el valor 1500.
+Debe aparecer en pantalla 10 - 20 -30 etc.
+
+6) Realizar un programa que permita cargar dos listas de 3 valores cada una. Informar con un mensaje cual de las dos listas tiene un valor 
+acumulado mayor (mensajes 'Lista 1 mayor', 'Lista 2 mayor', 'Listas iguales')
+Tener en cuenta que puede haber dos o más estructuras repetitivas en un algoritmo.
+
+7) Desarrollar un programa que permita cargar 5 números enteros y luego nos informe cuántos valores fueron pares y cuántos impares.
+Emplear el operador "%" en la condición de la estructura condicional.
+if (valor%2==0)
+El operador "%" retorna el resto de la división valor / 2. Por ejemplo: 12 % 2, retorna 0; 13 % 2, retorna 1, porque el resto de dividir 
+13 en 2 es 1.
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+Problema #1
+<h4>Problema 1</h4><br>
+<script>
+var pregunta=0;
+var nota1=0;
+var nota2=0;
+while (pregunta<10)
+    {
+    var cantidad;
+    cantidad=prompt('Ingrese nota','');
+    if (cantidad>=7){
+        nota1=nota1+1;
+    }
+    else{
+        nota2=nota2+1;
+    }
+    pregunta=pregunta+1;
+    }
+document.write('Cantidad de notas mayores a 7:'+nota1);
+document.write('<br>');
+document.write('Cantidad de notas menores a 7:'+nota2);
+</script><br>
+
+Porblema #3
+<h4>Problema 3</h4><br>
+<script>
+var sueldos;
+var pregunta=0;
+var grupo1=0;
+var grupo2=0;
+var imp=0;
+while (pregunta<6)
+    {
+    sueldos=prompt('Ingrese su sueldo','');
+    sueldos=parseInt(sueldos);
+    if (sueldos<300){
+        grupo1=grupo1+1;
+    }
+    else{
+        grupo2=grupo2+1;
+    }
+    pregunta=pregunta+1;
+    imp=imp+sueldos;
+    }
+document.write('Cantidad de personas que cobran menos de 300$: '+grupo1);
+document.write('<br>');
+document.write('Cantidad de personas que cobran mas de 300$: '+grupo2);
+document.write('<br>');
+document.write('Importacion que se gasta en sueldos:' +imp);
+</script>
+
+<script>
+    var x;
+    x=5;
+    while (x<=100)
+    {
+      document.write(x);
+      document.write('<br>');
+      x=x+5;
+    }
+</script><br>
+
+<script>
+    var x;
+    x=10;
+    while (x<=1500)
+    {
+      document.write(x);
+      document.write('<br>');
+      x=x+10;
+    }
+</script><br>
+
+<script>
+var pregunta=0;
+var valores=0;
+var suma=0;
+var suma2=0;
+while(pregunta<3){
+    valores=prompt('Ingrese valor de la primer lista: ','');
+    suma=suma+valores;
+    pregunta=pregunta+1;
+}
+pregunta=0;
+while(pregunta<3){
+    valores=prompt('Ingrese valor de la segunda lista: ','');
+    suma2=suma2+valores;
+    pregunta=pregunta+1;    
+}
+if(suma>suma2){
+    document.write('Tiene mayor valor la lista #1');
+
+}
+else{
+    if(suma2>suma){
+        document.write('Tiene mayor valor la lista #2');
+    }
+    else{
+        document.write('son iguales');
+    }
+}
+</script><br>
+
+<script>
+var pregunta=0;
+var valores=0;
+var impar=0;
+var par=0;
+while(pregunta<5){
+    valores=prompt('Ingrese valor de la primer lista: ','');
+    if (valores%2==0){
+        par=par+1
+    }
+    else{
+        impar=impar+1
+    }
+    pregunta=pregunta+1;
+}
+document.write('Los numeros pares fueron: '+par);
+document.write('<br>');
+document.write('Los numeros impares fueron: '+impar);
+
+</script>
+
+</body>
+</html><br>-->
+
+<!-- #14
+PROBLEMAS
+
+- Realizar un programa que acumule (sume) valores ingresados por teclado hasta ingresa el 9999 (no sumar dicho valor, solamente 
+indica que ha finalizado la carga). Imprimir el valor acumulado e informar si dicho valor es cero, mayor a cero o menor a cero.
+
+- En un banco se procesan datos de las cuentas corrientes de sus clientes. De cada cuenta corriente se conoce: número de cuenta, 
+nombre del cliente y saldo actual. El ingreso de datos debe finalizar al ingresar un valor negativo en el número de cuenta.
+Se pide confeccionar un programa que lea los datos de las cuentas corrientes e informe:
+a) De cada cuenta: número de cuenta, nombre del cliente y estado de la cuenta según su saldo, sabiendo que:
+Estado de la cuenta 'Acreedor' si el saldo es >0.
+'Deudor' si el saldo es <0.
+'Nulo' si el saldo es =0.
+b) La suma total de los saldos acreedores.
+
+- Se realizó un censo provincial y se desea procesar la información obtenida en dicho censo. De cada una de las personas censadas 
+se tiene la siguiente información: número de documento, edad y sexo ('femenino' o 'masculino')
+Se pide confeccionar un programa que lea los datos de cada persona censada (para finalizar ingresar el valor cero en el número de 
+documento) e informar:
+
+a) Cantidad total de personas censadas.
+b) Cantidad de varones.
+c) Cantidad de mujeres.
+d) Cantidad de varones cuya edad varía entre 16 y 65 años.
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+Problema #1
+<script>
+  var valor;
+  var suma=0;
+  do {
+    valor=prompt('Ingrese un valor entre 0 y 9999(ingrese 9999 para parar):','');
+    valor=parseInt(valor);
+    if (valor!=9999)
+    {
+      suma= suma+valor;
+    }
+    }while(valor!=9999);
+    document.write('la suma de sus valores a sido' +suma);
+    document.write('<br>');
+    document.write('a introducido el 9999 por eso a parado');
+    document.write('<br>');
+    if (suma>0){
+    document.write('La suma de los valroes es mayor a 0');
+    }
+    else{
+      if (suma==0){
+      document.write('La suma de los valroes es igual a 0');
+    }
+    else{
+      document.write('La suma de los valroes es menor a 0');
+      }
+    }    
+</script>
+ Problema #2
+<script>
+  var numc;
+  var nombre;
+  var saldo=0;
+  var suma=0;
+  do{
+    numc=prompt('Numero de cuenta:','');
+    numc=parseInt(numc);
+    if(numc>0){
+      nombre=prompt('Nombre del cliente:','');
+      saldo=prompt('Saldo que posee:','');
+      saldo=parseInt(saldo);
+      if (saldo>0)
+    {
+      suma=suma+saldo;
+      document.write('Su nombre de cuenta: ' +nombre);
+      document.write('<br>');
+      document.write('Su numero de cuenta: ' +numc);
+      document.write('<br>');
+      document.write('Su saldo: Acredor');
+      document.write('<br>');
+      document.write('Suma de todos los saldos: ' +suma);
+      document.write('<br>');
+      document.write('<br>');
+    }
+    else{
+      if (saldo<0){
+        document.write('Su nombre de cuenta: ' +nombre);
+        document.write('<br>');
+        document.write('Su numero de cuenta: ' +numc);
+        document.write('<br>');
+        document.write('Su saldo: Deudor');
+        document.write('<br>');
+        document.write('Suma de todos los saldos: ' +suma);
+        document.write('<br>');
+        document.write('<br>');
+      }
+      else{
+        if(saldo==0){
+          saldo="Nulo";
+          document.write('Su nombre de cuenta: ' +nombre);
+          document.write('<br>');
+          document.write('Su numero de cuenta: ' +numc);
+          document.write('<br>');
+          document.write('Su saldo: nulo');
+          document.write('<br>');
+          document.write('Suma de todos los saldos: ' +suma);
+          document.write('<br>');
+          document.write('<br>');
+        }
+      }
+    }
+    }
+    }while(numc>0);
+    document.write('Su nombre de cuenta: empty' );
+    document.write('<br>');
+    document.write('Su numero de cuenta: ' +numc);
+    document.write('<br>');
+    document.write('Su saldo: ?');
+    document.write('<br>');
+    document.write('Suma de todos los saldos: ' +suma);
+    document.write('<br>');
+    document.write('<br>');
+</script>
+
+Problema #3
+<script>
+  var sexo;
+  var edad;
+  var suma1=0;
+  var suma2=0;
+  var hombre=0;
+  var psensadas=0;
+  var documento;
+  do {
+    documento=prompt('Diga su # de documento: ','');
+    document.write('Su # de documento es:'+documento);
+    document.write('<br>');
+    edad=prompt('Diga su edad: ','');
+    document.write('Su edad es:' +edad);
+    document.write('<br>');
+    sexo=prompt('Diga si es masculino o femenino( f o m): ','');
+    if (sexo=='m')
+    {
+      suma1= suma1+ 1;
+      if (edad>16 && edad<65){
+        hombres= hombres + 1
+        document.write('Cantidad de sexo:'+sexo);
+      }
+    }else{
+      if (sexo=='f'){
+        suma2= suma2 +1;
+        document.write('Cantidad de sexo:'+sexo);
+      }
+      psensadas=psensadas+1
+    }
+    }while(valor!=0);
+    document.write('<br>');
+    document.write('Su # de documento es:'+documento);
+    document.write('<br>');
+    document.write('Su edad es:' +edad);
+    document.write('<br>');
+    document.write('Su edad es:' +suma1);
+    document.write('<br>');
+    document.write('Sexo:'+sexo);
+</script>-->
+
+
+
+<!-- #16
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejemplo de JavaScript</title>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+function Saludo()
+{
+document.write("Ola buenas tardes<br>");
+document.write("metiendo mano?<br>");
+}
+Saludo();
+</script>
+
+</body>
+</html>-->
+
+<!-- #17
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+PROBLEMAS
+
+- Elaborar una función a la cual le enviemos tres enteros y muestre el menor.
+- Confeccionar una función a la cual le envíe tres enteros y los muestre ordenados de menor a mayor.
+
+Problema #1
+    <script>
+function mostrarComprendidos(x1,x2,x3){
+if (x1<x2 && x1<x3){
+    document.write('su primer valor fue menor '+x1);
+  }else{
+      if(x2<x1 && x2<x3){
+        document.write('su segundo valor fue menor '+x2);
+      }else{
+        document.write('su tercer valor fue menor '+x3);
+      }
+    }
+  }
+  var valor1,valor2,valor3;
+  valor1=prompt('Ingrese su primer valor entero: ','');
+  valor1=parseInt(valor1);
+  valor2=prompt('Ingrese su segundo valor entero:','');
+  valor2=parseInt(valor2);
+  valor3=prompt('Ingrese su tercer valor entero:','');
+  valor3=parseInt(valor3);
+  mostrarComprendidos(valor1,valor2,valor3);
+</script>
+
+<script>
+    function mostrarComprendidos(x1,x2,x3){
+    if (x1<x2 && x2<x3){
+        document.write('primero:'+x1 , 'segundo:'+x2 , 'tercer:'+x3 );
+      }else{
+          if(x1<x2 && x3<x2){
+            document.write('primero:'+x1 ,'tercer:' +x3 , 'segundo:'+x2 );
+          }else{
+            if(x2<x3 && x3<x1){
+            document.write('segundo:'+x2 ,'tercer:' +x3 , 'primero:'+x1 );
+          }else{
+              if(x2<x1 && x1<x3){
+                document.write('segundo:'+x2 , 'primero:'+x1 ,'tercer:' +x3 );
+              }else{
+                  if(x3<x1 && x1<x2){
+                    document.write('tercer:'+x3 , 'primero:'+x1 , 'segundo:'+x2 );
+                  }else{
+                      if(x3<x2 && x2<x1){
+                        document.write('tercer:'+x3 ,'segundo:' +x2 , 'primero:'+x1 );
+                      }
+                  }
+              }
+            }
+          }
+        }
+      }
+      var valor1,valor2,valor3;
+      valor1=prompt('Ingrese su primer valor entero: ','');
+      valor1=parseInt(valor1);
+      valor2=prompt('Ingrese su segundo valor entero:','');
+      valor2=parseInt(valor2);
+      valor3=prompt('Ingrese su tercer valor entero:','');
+      valor3=parseInt(valor3);
+      mostrarComprendidos(valor1,valor2,valor3);
+    </script>
+
+</body>
+</html>-->
+
+<!-- #18
+PROBLEMAS
+
+- Confeccionar una función a la cual le envíe tres enteros y retorne el mayor de ellos.
+- Elaborar una función a la cual le envíe el valor del lado de un cuadrado y me retorne su perímetro.
+- Desarrollar una función que retorne la cantidad de dígitos que tiene una variable entera positiva de hasta 5 dígitos.
+- Elaborar una función que reciba tres enteros y retorne el promedio.
+- Confeccionar una función que solicite la carga de 5 valores por teclado y retorne su suma.
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  function mayor(x1, x2, x3)
+  {
+    if (x==1)
+      return "uno";
+    else
+      if (x==2)
+        return "dos";
+      else
+        if (x==3)
+          return "tres";
+        else
+          if (x==4)
+            return "cuatro";
+          else
+            if (x==5)
+              return "cinco";
+            else
+              return "valor incorrecto";
+  }
+
+  var valor1, valor2, valor3;
+  valor=prompt("Ingrese un valor entre 1 y 5","");
+  valor=prompt("Ingrese un valor entre 1 y 5","");
+  valor=parseInt(valor);
+  var r;
+  m=mayor(valor);
+  document.write(m);
+
+</script>
+
+Problema #1
+<script>
+    function mayor(x1,x2,x3){
+    if (x1>x2 && x1>x3){
+        document.write('su primer valor fue el mayor '+x1);
+      }else{
+          if(x2>x1 && x2>x3){
+            document.write('su segundo valor fue el mayor '+x2);
+          }else{
+            document.write('su tercer valor fue el mayor '+x3);
+          }
+        }
+      }
+      var valor1,valor2,valor3;
+      valor1=prompt('Ingrese su primer valor entero: ','');
+      valor1=parseInt(valor1);
+      valor2=prompt('Ingrese su segundo valor entero:','');
+      valor2=parseInt(valor2);
+      valor3=prompt('Ingrese su tercer valor entero:','');
+      valor3=parseInt(valor3);
+      mayor(valor1,valor2,valor3);
+</script>
+
+ Problema #2
+<script>
+    function perimetro(x1){
+        var mult = parseInt(lado) * 4;
+        document.write('El perimetro del cuadrado es: ');
+        document.write(mult);
+      }
+      var lado;
+      lado=prompt('Ingrese la logitud de su lado: ','');
+      lado=parseInt(lado);
+      perimetro(lado);
+</script>
+
+ Problema #3
+<script>
+    function digitos(x1){
+        if(x1<10){
+            document.write(x1,' posee 1 digito');
+        }else{
+            if(x1<100 && x1>=10){
+                document.write(x1,' posee 2 digito');
+            }else{
+                if(x1<1000 && x1>=100){
+                    document.write(x1,' posee 3 digito');
+                }else{
+                    if(x1<10000 && x1>=1000){
+                        document.write(x1,' posee 4 digito');
+                    }else{
+                        if(x1>10000){
+                            document.write(x1,' posee 5 o mas digito');
+                        }
+                    }
+                }
+            }
+        }
+      }
+      var num;
+      num=prompt('Ingrese un numero cualquiera: ','');
+      num=parseInt(num);
+      digitos(num);
+</script>
+
+Problema #4
+<script>
+    function promedio(x1,x2,x3){
+        var suma = x1 + x2 + x3;
+        var div = suma / 3;
+        return div;
+      }
+      var lado;
+      val1=prompt('Ingrese su primer valor: ','');
+      val1=parseInt(val1);
+      val2=prompt('Ingrese su segundo valor: ','');
+      val2=parseInt(val2);
+      val3=prompt('Ingrese su tercer valor: ','');
+      val3=parseInt(val3);
+      var prom;
+      prom=promedio(val1,val2,val3);
+      document.write('El promedio es: ' +prom);
+</script>
+
+Problema #5
+<script>
+function promedio(x1,x2,x3,x4,x5){
+    var suma = x1 + x2 + x3 + x4 + x5;
+    return suma;
+    }
+    var val1,val2,val3,val4,val5;
+    val1=prompt('Ingrese su primer valor: ','');
+    val1=parseInt(val1);
+    val2=prompt('Ingrese su segundo valor: ','');
+    val2=parseInt(val2);
+    val3=prompt('Ingrese su tercer valor: ','');
+    val3=parseInt(val3);
+    val4=prompt('Ingrese su cuarto valor: ','');
+    val4=parseInt(val4);
+    val5=prompt('Ingrese su quinto valor: ','');
+    val5=parseInt(val5);
+    var calc;
+    calc=promedio(val1,val2,val3,val4,val5);
+    document.write('El la suma es: ' +calc);
+</script>
+
+</body>
+</html>-->
+
+<!-- #20
+- Confeccionar un programa que muestre en que cuatrimestre del año nos encontramos. Para esto obtener el mes.
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  function mostrarmes()
+  {
+    var fecha
+    fecha=new Date();
+    document.write('Estamos en el mes: ');
+    var mes=fecha.getMonth();
+    document.write((fecha.getMonth()+1)+'');
+    document.write('<br>');
+    if (mes<=6){
+        document.write('Segundo cuatrimestre');
+    }else{
+        if(mes>6){
+            document.write('Segundo cuatrimestre');
+        }else{
+            if (mes>=8){
+                document.write('Primer cuatrimestre');
+            }
+        }
+    }
+
+  }
+
+//Llamada a la función
+  mostrarmes();
+</script>
+
+</body>
+</html>-->
+
+<!-- #22
+- Confeccionar un programa que solicite el ingreso de un número y nos muestre dicho valor elevado a la tercera potencia.
+
+- Ingresar por teclado un valor y luego mostrar la raiz cuadrada de dicho valor;
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+ Problema #1
+<script>
+    var num1;
+    num1=prompt('Ingrese un valor entre 1 y 10','');
+    num1=parseInt(num1); 
+    var num=Math.pow(num1,3);
+    document.write('su numero a la tercera potencia es: ' +num);
+</script>
+
+<script>
+    var num1;
+    num1=prompt('Ingrese un valor:');
+    num1=parseInt(num1); 
+    var num=Math.sqrt(num1);
+    document.write('La raiz de su numero es: ' +num);
+</script>
+
+</body>
+</html>-->
+
+<!-- #23
+
+- Ingresar una serie de nombres por teclado hasta que se cargue la palabra Fin, y mostrar cuántos nombres se ingresaron.
+
+- Igual al anterior, pero que termine la aplicación sin contemplar mayúsculas ni minúsculas. Es decir que para salir se pueda teclear fin, Fin o FIN.
+
+- Realizar la búsqueda de un string clave en un string fuente. Se deberá ingresar una frase o texto (fuente) y luego la clave a buscar. 
+En caso de encontrarla, imprimir la posición, de lo contrario una leyenda que indique que no está.
+
+- Ingresar una palabra o texto por teclado y determinar si es o no una palabra palíndromo. (Palabra que se lee de igual manera de adelante hacia atrás, que de atrás hacia delante)
+
+- Realizar un programa que permita cargar una dirección de mail e implementar una función que verifique si el String tiene cargado el carácter @.
+
+- Cargar un String por teclado e implementar las siguientes funciones:
+a) Imprimir la primera mitad de los caracteres de la cadena.
+b) Imprimir el último carácter.
+c) Imprimirlo en forma inversa.
+d) Imprimir cada carácter del String separado con un guión.
+e) Imprimir la cantidad de vocales almacenadas.
+
+- Codifique un programa que permita cargar una oración por teclado, luego mostrar cada palabra ingresada en una línea distinta.
+Por ejemplo si cargo:
+La mañana está fría.
+Debe aparecer:
+La
+mañana
+está
+fría.
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+
+<script>
+    var nombres;
+    var cant=0;
+    do{
+        nombres=prompt('Ingrese un nombre escriba FIN para terminar):','');
+        cant++;
+    }while (nombres!='FIN');
+    cant--;
+    document.write('Ustede ingreso esta cantidad de nombres: ' +cant);
+    </script>
+
+<script>
+  var cadena=prompt('Ingrese una cadena:','');
+   document.write('La cadena ingresada es:'+cadena);
+   document.write('<br>');
+   document.write('La cantidad de caracteres son:'+cadena.length);
+   document.write('<br>');
+   document.write('El primer carácter es:'+cadena.charAt(0));
+   document.write('<br>'); 
+   document.write('Los primeros 3 caracteres son:'+cadena.substring(0,3));
+   document.write('<br>'); 
+   if (cadena.indexOf('hola')!=-1)
+     document.write('Se ingresó la subcadena hola');
+   else 
+     document.write('No se ingresó la subcadena hola');
+   document.write('<br>'); 
+   document.write('La cadena convertida a mayúsculas es:'+cadena.toUpperCase());
+   document.write('<br>');
+   document.write('La cadena convertida a minúsculas es:'+cadena.toLowerCase());
+   document.write('<br>'); 
+ </script> 
+
+</body>
+</html>-->
+
+<!-- #24
+- Crear un formulario con tres botones con las leyendas "1", "2" y "3". Mostrar un mensaje indicando qué botón se presionó.
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  var boton=1;
+  function incrementar()
+  {
+    alert('El boton que presiono es: ' + boton);
+  }
+  var boton2=2;
+  function incrementar2()
+  {
+    alert('El boton que presiono es: ' + boton2);
+  }
+  var boton3=3;
+  function incrementar3()
+  {
+    alert('El boton que presiono es: ' + boton3);
+  }
+</script>
+
+<form>
+  <input type="button" onClick="incrementar()" value="boton 1">
+  <input type="button" onClick="incrementar2()" value="boton 2">
+  <input type="button" onClick="incrementar3()" value="boton 3">
+</form>
+</body>
+</html>-->
+
+<!-- #25
+
+- Crear un programa que permita cargar un entero en un text y al presionar un botón nos muestre dicho valor elevado al 
+cubo (emplear la función alert).
+
+- Cargar dos números en objetos de tipo text y al presionar un botón, mostrar el mayor.
+
+- Cargar un nombre y un apellido en sendos text. Al presionar un botón, concatenarlos y mostrarlos en un tercer text 
+(Tener en cuenta que podemos modificar la propiedad value de un objeto TEXT cuando ocurre un evento)
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+function mostrar()
+{
+
+    var entero=document.getElementById('num').value;
+    var ent=Math.pow(entero,3);
+    alert('Ingresó el nombre:' + ent);
+
+}
+</script>
+
+<form>
+  Ingrese un entero:
+  <input type="text" id="num"><br>
+  <input type="button" value="Confirmar" onClick="mostrar()">
+</form>
+
+<script>
+function mostrar()
+{
+    var entero1=document.getElementById('num').value;
+    entero1=parseInt(entero1)
+    var entero2=document.getElementById('num2').value;
+    entero2=parseInt(entero2)
+    if(entero1>entero2){
+        alert('El numero entro mayor que ingreso es: ' + entero1);
+    }else{
+        alert('El numero entro mayor que ingreso es: ' + entero2);
+    }
+
+
+}
+</script>
+
+<form>
+    Ingrese un entero:
+    <input type="text" id="num"><br>
+    Ingrese un segundo entero:
+    <input type="text" id="num2"><br>
+    <input type="button" value="Confirmar" onClick="mostrar()">
+</form>-->
+
+<script>
+function mostrar()
+{
+    var nombre=document.getElementById('nom').value;
+    var apellido=document.getElementById('ape').value;
+    document.getElementById('suma').value=nombre+' '+ apellido;
+}
+</script>
+
+<form>
+Ingrese su nombre:
+<input type="text" id="nom">
+<br>
+Ingrese su apellido:
+<input type="text" id="ape">
+<br>
+<input type="button" value="juntar valores" onClick="mostrar()">
+<br><br>
+<input type="text" id="suma">
+</form>
+
+</body>
+</html>
+
